@@ -1,0 +1,51 @@
+fc -s 1000 1200
+
+
+ 1056  mkdir Flask_Demo
+ 1057  cd Flask_Demo
+ 1058  pwd
+ 1059  git init
+ 1060  python3 -m venv venv
+ 1061  venv/bin/activate
+ 1062  ls
+ 1063  pwd
+ 1064  source venv/bin/activate
+ 1065  pwd
+ 1066  ls
+ 1067  git clone https://github.com/acs46/flask_demo.git
+ 1068  ls
+ 1069  cd flask_demo
+ 1070  ls
+ 1071  vi requirements.txt
+ 1072  pip3 freeze
+ 1073  pip freeze
+ 1074  flask run
+ 1075  pip3 install -r  requirements.txt
+ 1076  pip3 freeze
+ 1077  ls
+ 1078  vi main.py
+ 1079  echo $FLASK_APP
+ 1081  pwd
+ 1082  ls
+ 1083  export FLASK_APP='main.py'
+ 1084  echo $FLASK_APP
+ 1086  ls templates
+ 1087  pwd
+ 1088  ls
+ 1089  git add .
+ 1090  git status
+ 1091  git commit -m "Starting Directory downloaded & set up"
+ 1092  git log
+ 1093  git status
+ 1094  history
+ 1101  flask run
+ 1102  cat 3main.py
+ 1103  cat 2main.py
+ 1104  cat 1main.py
+ 1105  pwd
+ 1107  cd templates
+ 1110  vi home.html
+ 1114  fc -l
+ 1115  fc -0
+ 1116  fc -l 1 10
+ 1117  fc -l 1000

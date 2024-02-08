@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Getting Started in Flask{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1> My Awesome Bioinformatics Project </h1>
+    <p> Flask is Functional </p>
+    <h1>Hello World!</h1>
+<p>{{ moment(current_time).format('LLL') }}</p>
+
+<!--
+<p>That was {{ moment(current_time).fromNow(refresh=True) }}</p>
+-->
+
+</div>
+{% endblock %}
