@@ -1,44 +1,26 @@
-BasicFlaskSetup
+BasicFlaskSetup using Codesspaces on Github
+
+https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/setting-up-your-python-project-for-codespaces 
+
 
 Simple framework w/ Navigation Menu
+Codespaces creates a contained virtual environment with access to GIT tools for version control and easy sharing with colleagues.
 
-$ pip3 list # lists currently installed modules
+$ pip list # lists currently installed modules
 
-Create a project directory for your stuff
-$ cd ~/mydir
-Unzip BasicFlaskSetup.zip
-$ create .gitignore (for any files don't need in repo)
-$ git init
-
-Virtual Environments
-
-Creates venv directory in your project directory
-$ python3 -m venv venv # could call the virtual env something else i.e. python3 -m venv myenviro
-$ source venv/bin/activate # activate the virtual environment in your current project dir
-$ deactivate # deactivate turns off virtual environment
-
-for python2
-$ sudo pip install virtualenv
-$ virtualenv venv
-
-for Windows environment run as Admin
-$ pip install virtualenv
-$ virtual venv
-$ venv\Scripts\activate
-
-$ pip3 install flask
-or
 $ pip install flask
-$ pip3 freeze # shows all packages installed in virtual env
+
+$ pip freeze # shows all packages installed in virtual env
 
 Make sure all the packages in requirements file are installed for this example to work
 
-$ pip3 install -r requirements.txt ## install all packages for basicflasksetup to run application
+$ pip install -r requirements.txt ## install all packages for basicflasksetup to run application
 
-$ pip3 freeze > requirements.txt #will create file 'requirements.txt' listing all packages currently loaded
+$ pip freeze > requirements.txt # will create or overwrite the file 'requirements.txt' listing all packages currently loaded
+
 Part 1 - Create the app
 
-create mydir/1main.py
+create/edit file 1main.py
 
   from flask import Flask
 
@@ -54,6 +36,9 @@ create mydir/1main.py
 
   if __name__ == "__1main__":
       app.run(debug=True)
+
+
+set FLASK app environmental variable
 
 $ export FLASK_APP=1main.py
 
@@ -71,9 +56,13 @@ $ python 1main.py
 
 open web browser to http://127.0.0.1:5000 (or localhost:5000)
 control+C in the terminal window to quit server
+
+
 Part2 - Add a template page to app
 
 Create a new version of the app called 2main.py and a template called templates/home1.html
+
+create/edit 2main.py
 
 $vi 2main.py
 
@@ -92,7 +81,7 @@ def ash():
 if __name__ == "__2main__":
     app.run(debug=True)
 
-create a directory mydir/templates
+create a directory: templates
 inside templates directory create file home1.html
 
   <!DOCTYPE html>
@@ -173,6 +162,7 @@ $ flask run
 open web browser to http://127.0.0.1:5000
 (or localhost:5000)
 control+C in the terminal window to quit server
+
 Part 4 - Add more routes pg2, search, refs, help and use form to catch user input and add error pages
 
 Create a new version of the app called main.py and a template called templates/pg2 search ref help etc.
@@ -255,10 +245,6 @@ open web browser to http://127.0.0.1:5000
 (or localhost:5000)
 control+C in the terminal window to quit server
 
-Save changes using git
-git add .
-git commit -m "finished editing"
+Save changes using git tools
 
-Deactivate virtual environment when you're finished
-$ deactivate
 
